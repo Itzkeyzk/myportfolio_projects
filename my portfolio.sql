@@ -10,7 +10,7 @@ order by 3, 4
 --order by 3, 4
 
 
---i'm gonna be selecting the data i will need
+--I will be carefully curating and selecting the specific data that is essential for my project
 
 select location,date, total_cases,new_cases, total_deaths, population
 from PortfolioProjects..CovidDeaths
@@ -25,7 +25,7 @@ where location like '%nigeria%'
 order by 1, 2
 
 -- looking at the total cases vs the population
---shows what percentage of population covid got
+-- and showing what percentage of population covid got
 
 select location,date, population,  total_cases, (total_cases/population)*100 as covid_population
 from PortfolioProjects..CovidDeaths
